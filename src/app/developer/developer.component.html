@@ -1,0 +1,11 @@
+
+
+
+<p>
+    Je suis {{ developer.lastName }} {{ developer.firstName }}, j'ai
+    {{ developer.age }} ans je suis un {{ developer.gender }} et {{ developer.bio }}
+  </p>
+  <div>
+    <p>Mes skills :</p>
+    <app-skill *ngFor="let skill of developer.skills" [name]="this.skill.name" [logo]="this.skill.logo" [site]="this.skill.Site"></app-skill>
+  </div>
